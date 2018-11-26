@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Webform for FreeCodeCamp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1 id="title">La vida es bella</h1>
+
+    <p id="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, tellus tincidunt scelerisque vehicula, velit magna pretium ligula, quis congue justo neque et arcu. Quisque egestas massa quis ex congue facilisis. Duis accumsan risus eleifend feugiat sollicitudin. Aenean ut tempus ipsum, ut vestibulum risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In mi nibh, tristique id efficitur eget, dignissim sit amet nisl. Ut sed dolor augue.
+
+        Phasellus orci sem, sagittis ac bibendum id, bibendum at elit. Duis turpis nisi, dapibus nec mauris vitae, porttitor fringilla quam. Sed eleifend vitae mi non varius. Sed scelerisque turpis tellus, non fringilla eros rhoncus eget. Suspendisse facilisis ultrices eros id gravida. Mauris elementum tellus sit amet sapien convallis tristique non nec urna. Sed finibus ultrices diam, non auctor purus placerat id. Vestibulum bibendum lobortis erat, quis pulvinar nulla varius in. Pellentesque sed elit suscipit, rhoncus purus at, feugiat est. Maecenas tincidunt luctus tellus, in interdum diam sollicitudin congue. Vivamus tempor venenatis viverra. Pellentesque ut quam quam. Praesent efficitur mauris massa, consectetur auctor mauris fermentum consequat. Vivamus ullamcorper, risus quis volutpat pulvinar, nulla ipsum porta massa, sed placerat augue metus ac lorem. Sed vel nulla dolor. Phasellus et tempus nunc.</p>
+
+    <form action="/sendForm.php" id="survey-form">
+            <h3>Name</h3>
+            <label for="name"   id="name-label">      <input type="text" id="name"        placeholder="Enter Your name" required></label>
+            <h3>Email</h3>
+            <label for="email"  id="email-label">    <input type="email" id="email"      placeholder="Enter your email" required></label>
+            <h3>Age</h3>
+            <label for="number" id="number-label">  <input type="number" id="number"    placeholder="Enter your age" min="0" max="150" required></label>
+
+            <h3>Pick a color!</h3>
+            <label id="dropdown"> 
+                <select>
+                    <option value="rojo">       Rojo</option>
+                    <option value="verde">      Verde</option>
+                    <option value="amarillo">   Amarillo</option>
+                    <option value="azul">       Azul</option>
+                </select>
+            </label>
+
+            <h3>What is in your opinion the best pet someone can have?</h3>
+                <label><input id="Doggos" type="radio" name="pets"> Doggos </label>
+                <label><input id="Kitties" type="radio" name="pets"> Kitties </label>
+                <label><input id="Bunnies" type="radio" name="pets"> Bunnies </label>
+                <label><input id="Tortoises" type="radio" name="pets"> Tortoises </label>
+                <label><input id="AllOfThem" type="radio" name="pets" checked> All of them!  </label>
+
+            <h3>Pick some videogames!</h3>
+            <label for="videogames">
+                <label><input id="Undertale" type="checkbox" name="goodOnes" checked> Undertale         </label>
+                <label><input id="DMC3" type="checkbox" name="goodOnes"> DMC3           </label>
+                <label><input id="HollowKnight" type="checkbox" name="goodOnes"> Hollow Knight          </label>
+                <label><input id="Persona3" type="checkbox" name="goodOnes"> Persona 3          </label>
+                <label><input id="TheWitcher3" type="checkbox" name="goodOnes"> The Witcher 3           </label>
+            </label>
+
+            <h3>Any additional comments?</h3>
+            <label for="adittional-comments" id="comments-label"><textarea rows="4" cols="50">Any additional input is appreciated!</textarea></label>
+
+            <br><br>
+            <button id="submit">Submit</button>
+    </form>    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+
+</body>
+
+
+</html>
