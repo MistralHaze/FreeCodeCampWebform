@@ -8,71 +8,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 </head>
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
-    <div id="top-bar">
-            <h1 id="title">La vida es bella</h1>
+
+<!-- El cuadrado de arriba
+    <div id="top-bar" class="box" >
+        <h1 id="title" class="title">Webform</h1>
+        <div class="underline-box">
+        </div>  
     </div>
-    <div id="background">
+    -->
+        <div id="background">
         <div id="form-body">
+                <h1 id="title" class="title">¿Es Victor un filthy machango?</h1>
 
-            <p id="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, tellus tincidunt
-                scelerisque vehicula, velit magna pretium ligula, quis congue justo neque et arcu. Quisque egestas
-                massa quis ex congue facilisis. Duis accumsan risus eleifend feugiat sollicitudin. Aenean ut tempus
-                ipsum, ut vestibulum risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                ac turpis egestas. In mi nibh, tristique id efficitur eget, dignissim sit amet nisl. Ut sed dolor
-                augue.
 
-                Phasellus orci sem, sagittis ac bibendum id, bibendum at elit. Duis turpis nisi, dapibus nec mauris
-                vitae, porttitor fringilla quam. Sed eleifend vitae mi non varius. Sed scelerisque turpis tellus, non
-                fringilla eros rhoncus eget. Suspendisse facilisis ultrices eros id gravida. Mauris elementum tellus
-                sit amet sapien convallis tristique non nec urna. Sed finibus ultrices diam, non auctor purus placerat
-                id. Vestibulum bibendum lobortis erat, quis pulvinar nulla varius in. Pellentesque sed elit suscipit,
-                rhoncus purus at, feugiat est. Maecenas tincidunt luctus tellus, in interdum diam sollicitudin congue.
-                Vivamus tempor venenatis viverra. Pellentesque ut quam quam. Praesent efficitur mauris massa,
-                consectetur auctor mauris fermentum consequat. Vivamus ullamcorper, risus quis volutpat pulvinar, nulla
-                ipsum porta massa, sed placerat augue metus ac lorem. Sed vel nulla dolor. Phasellus et tempus nunc.</p>
+            <p id="description"> Esta claro que en esta vida hay muchas cosas claras: los kaijus molan, la gente de derechas grita españa mientras les revienta la vena del cuello y que de este grupo el único que no vivirá debajo de un puente será Blas. La duda es ¿ Es Victor un machango?
+            </p>
 
             <form action="/sendForm.php" id="survey-form">
+                <h2 style="text-align:center"> Necesitamos los datos de la gente que se ha cagado en Victor.</h2>
                 <h3>Name</h3>
                 <label for="name" id="name-label"> <input type="text" id="name" placeholder="Enter Your name" required></label>
                 <h3>Email</h3>
                 <label for="email" id="email-label"> <input type="email" id="email" placeholder="Enter your email"
                         required></label>
-                <h3>Age</h3>
-                <label for="number" id="number-label"> <input type="number" id="number" placeholder="Enter your age"
+                <h3>Grado de mecagoenpechotes</h3>
+                <label for="number" id="number-label"> <input type="number" id="number" placeholder="Del 1 al infinito"
                         min="0" max="150" required></label>
 
-                <h3>Pick a color!</h3>
+                <h3>Selecciona el tipo de machango que es Victor!</h3>
                 <label id="dropdown">
                     <select>
-                        <option value="rojo"> Rojo</option>
-                        <option value="verde"> Verde</option>
-                        <option value="amarillo"> Amarillo</option>
-                        <option value="azul"> Azul</option>
+                        <option value="rojo"> Filthy</option>
+                        <option value="verde"> Green</option>
+                        <option value="amarillo"> Yellow</option>
+                        <option value="azul"> Blue</option>
                     </select>
                 </label>
 
-                <h3>What is in your opinion the best pet someone can have?</h3>
-                <label><input id="Doggos" type="radio" name="pets"> Doggos </label>
-                <label><input id="Kitties" type="radio" name="pets"> Kitties </label>
-                <label><input id="Bunnies" type="radio" name="pets"> Bunnies </label>
-                <label><input id="Tortoises" type="radio" name="pets"> Tortoises </label>
-                <label><input id="AllOfThem" type="radio" name="pets" checked> All of them! </label>
+                <h3>Que carácteristica destacarias de Victor?</h3>
+                <label><input id="Doggos" type="radio" name="pets"> Sexy </label>
+                <label><input id="Kitties" type="radio" name="pets"> Precioso </label>
+                <label><input id="Bunnies" type="radio" name="pets"> Loable </label>
+                <label><input id="Tortoises" type="radio" name="pets"> Buen hablador </label>
+                <label><input id="AllOfThem" type="radio" name="pets" checked> Machango </label>
 
-                <h3>Pick some videogames!</h3>
+                <h3>Como pegarias a Victor? (Puedes elegir varias!)</h3>
                 <label for="videogames">
-                    <label><input id="Undertale" type="checkbox" name="goodOnes" checked> Undertale </label>
-                    <label><input id="DMC3" type="checkbox" name="goodOnes"> DMC3 </label>
-                    <label><input id="HollowKnight" type="checkbox" name="goodOnes"> Hollow Knight </label>
-                    <label><input id="Persona3" type="checkbox" name="goodOnes"> Persona 3 </label>
-                    <label><input id="TheWitcher3" type="checkbox" name="goodOnes"> The Witcher 3 </label>
+                    <label><input id="Undertale" type="checkbox" name="goodOnes" checked> Palo </label>
+                    <label><input id="DMC3" type="checkbox" name="goodOnes"> Martillo </label>
+                    <label><input id="HollowKnight" type="checkbox" name="goodOnes"> Latigo-pistola </label>
+                    <label><input id="Persona3" type="checkbox" name="goodOnes"> Mondadientes </label>
+                    <label><input id="TheWitcher3" type="checkbox" name="goodOnes"> Elfo</label>
+                    <label><input id="TheWitcher3" type="checkbox" name="goodOnes"> Con la verdad </label>
                 </label>
 
-                <h3>Any additional comments?</h3>
-                <label for="adittional-comments" id="comments-label"><textarea rows="4" cols="50">Any additional input is appreciated!</textarea></label>
+                <h3>Algo más que añadir?</h3>
+                <label for="adittional-comments" id="comments-label"><textarea rows="4" cols="50">Cuanta más toxicidad mejor!!</textarea></label>
 
                 <br><br>
                 <button id="submit">Submit</button>

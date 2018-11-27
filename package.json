@@ -1,0 +1,25 @@
+{
+  "name": "freecodecamp_webform",
+  "version": "1.0.0",
+  "description": "Webform project for freecodecamp",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MistralHaze/FreeCodeCampWebform.git"
+  },
+  "keywords": [
+    "learning",
+    "webform"
+  ],
+  "author": "Carlos Rizo Maciá",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MistralHaze/FreeCodeCampWebform/issues"
+  },
+  "homepage": "https://github.com/MistralHaze/FreeCodeCampWebform#readme"
+}
