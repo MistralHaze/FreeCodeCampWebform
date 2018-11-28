@@ -8,62 +8,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
 
-<!-- El cuadrado de arriba
+    <!-- El cuadrado de arriba
     <div id="top-bar" class="box" >
         <h1 id="title" class="title">Webform</h1>
         <div class="underline-box">
         </div>  
     </div>
     -->
-        <div id="background">
+    <div id="background">
         <div id="form-body">
-                <h1 id="title" class="title">¿Es Victor un filthy machango?</h1>
+            <h1 id="title" class="title">¿Es Emil un maldito nórdico terrorista?</h1>
 
-
-            <p id="description"> Esta claro que en esta vida hay muchas cosas claras: los kaijus molan, la gente de derechas grita españa mientras les revienta la vena del cuello y que de este grupo el único que no vivirá debajo de un puente será Blas. La duda es ¿ Es Victor un machango?
+            <p id="description"> Esta claro que en esta vida hay muchas cosas claras: los kaijus molan, la gente de
+                derechas grita españa mientras les revienta la vena del cuello y que de este grupo el único que no
+                vivirá debajo de un puente será Dani. La duda es ¿ Es Emil un maldito nórdico terrorista?
             </p>
 
             <form action="/sendForm.php" id="survey-form">
-                <h2 style="text-align:center"> Necesitamos los datos de la gente que se ha cagado en Victor.</h2>
-                <h3>Name</h3>
-                <label for="name" id="name-label"> <input type="text" id="name" placeholder="Enter Your name" required></label>
-                <h3>Email</h3>
-                <label for="email" id="email-label"> <input type="email" id="email" placeholder="Enter your email"
-                        required></label>
-                <h3>Grado de mecagoenpechotes</h3>
-                <label for="number" id="number-label"> <input type="number" id="number" placeholder="Del 1 al infinito"
-                        min="0" max="150" required></label>
+                <div>
+                    <label id="name-label" for="name" class="labelsOfInput">Name</label><br>
+                    <input type="text" id="name" class="textInput"placeholder="Enter Your name" required>
+                </div>
+                <div>
 
-                <h3>Selecciona el tipo de machango que es Victor!</h3>
-                <label id="dropdown">
-                    <select>
-                        <option value="rojo"> Filthy</option>
-                        <option value="verde"> Green</option>
-                        <option value="amarillo"> Yellow</option>
-                        <option value="azul"> Blue</option>
-                    </select>
-                </label>
+                    <label id="email-label" for="email" class="labelsOfInput">Email</label> <br>
+                    <input type="email" id="email" class="textInput" placeholder="Enter your email" required>
+                </div>
+                <div>
 
-                <h3>Que carácteristica destacarias de Victor?</h3>
+                    <label id="number-label" for="number" class="labelsOfInput"> Grade</label> <br>
+                    <input type="number" id="number" class="textInput" style="margin-top: 1em;" placeholder="Del 1 al infinito" min="0" max="150" required>
+                </div>
+                <h3>Selecciona el tipo de persona que es Emil!</h3>
+
+                <div class="dropdownDiv">
+                    <label id="dropdown">
+                        <select>
+                            <option selected value="default">-- Select one --</option>
+                            <option value="rojo">Subnorman</option>
+                            <option value="verde">Green</option>
+                            <option value="amarillo">Yellow</option>
+                            <option value="azul">Blue</option>
+                        </select>
+                    </label>
+                </div>
+
+                <h3>Que carácteristica destacarias de Emil?</h3>
                 <label><input id="Doggos" type="radio" name="pets"> Sexy </label>
                 <label><input id="Kitties" type="radio" name="pets"> Precioso </label>
                 <label><input id="Bunnies" type="radio" name="pets"> Loable </label>
                 <label><input id="Tortoises" type="radio" name="pets"> Buen hablador </label>
-                <label><input id="AllOfThem" type="radio" name="pets" checked> Machango </label>
+                <label><input id="AllOfThem" type="radio" name="pets" checked> Bebedor de chupitos de leche </label>
 
-                <h3>Como pegarias a Victor? (Puedes elegir varias!)</h3>
+                <h3>Como pegarias a Emil? (Puedes elegir varias!)</h3>
                 <label for="videogames">
                     <label><input id="Undertale" type="checkbox" name="goodOnes" checked> Palo </label>
-                    <label><input id="DMC3" type="checkbox" name="goodOnes"> Martillo </label>
+                    <label><input id="DMC3" type="checkbox" name="goodOnes"> Hacha </label>
                     <label><input id="HollowKnight" type="checkbox" name="goodOnes"> Latigo-pistola </label>
                     <label><input id="Persona3" type="checkbox" name="goodOnes"> Mondadientes </label>
-                    <label><input id="TheWitcher3" type="checkbox" name="goodOnes"> Elfo</label>
+                    <label><input id="TheWitcher3" type="checkbox" name="goodOnes"> Cachimba</label>
                     <label><input id="TheWitcher3" type="checkbox" name="goodOnes"> Con la verdad </label>
                 </label>
 

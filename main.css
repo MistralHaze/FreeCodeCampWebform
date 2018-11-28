@@ -1,8 +1,4 @@
 
-#comments {
-    width: 25em;
-}
-
 #form-body {
     align-items: center;
     background-color: ghostwhite;
@@ -17,31 +13,12 @@
     margin: 0em 5em 3em 5em;
 }
 
-.box {
-    position: absolute;
-    float: left;
-    width: 100%;
-    padding: 2%;
-    background-color: #5783E8;
-}
-
 .title {
     padding: 0%;
     margin: 0%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
-
-.underline-box {
-    position: absolute;
-    float: left;
-    top: 90%;
-    left: -10%;
-    padding: 0.5%;
-    width: 110%;
-    background-color: #5368FF;
-}
-
 
 #background {
     padding-top: 4em;
@@ -53,4 +30,86 @@ body {
     background-color: #60ADFF;
     padding: 0%;
     margin: 0%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.labelsOfInput {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.textInput {
+    margin-top: 1.25em;
+    margin-bottom: 1em;
+    border-color: #FFC560;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 10em;
+    padding-left: 10px;
+}
+
+select {
+    border-color: #FFC560;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 10em;
+    font: inherit;
+}
+
+/* Modified code from: https://fabriceleven.com/design/clever-way-to-change-the-drop-down-selector-arrow-icon/ 
+Thanks to Alex Gurevich
+*/
+.dropdownDiv {
+    position: relative;
+}
+
+/*To remove button from IE11, thank you Matt */
+select::-ms-expand {
+    display: none;
+}
+
+.dropdownDiv:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    left: 8em;
+
+    /*Adjust for position however you want*/
+    top: 10px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #FFC560;
+    /*left line */
+    position: absolute;
+    pointer-events: none;
+}
+
+.dropdownDiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0px 8px;
+    font-size: 16px;
+}
+
+/*this is for hiding the arrows of the input-numbers */
+/*For chrome*/
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/*For firefox*/
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
 }
